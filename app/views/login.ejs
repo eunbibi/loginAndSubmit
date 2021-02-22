@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!--ejs embeds js into html -->
+    <title> <%= loginMessage %> </title>
+    <link rel="stylesheet" href="css/viewstyles.css">
+</head>
+<body>
+    <h2> <%= loginMessage %></h2>
+    <form method="post">
+		<div class="div_container">
+            <label>Email:</label>
+            <input type="text" size="30" placeholder="Enter your user email" name="email"><br />
+            <label>Password:</label>
+            <input type="password" size="30" placeholder="Enter your password" name="password"><br />
+            <input type="submit" value="Login" name="submit">
+        </div>
+    </form>
+</body>
+</html>

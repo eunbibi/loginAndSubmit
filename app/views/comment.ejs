@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> Tell us about yourself</h1>
+    <link rel="stylesheet" href="css/viewstyles.css">
+    <!-- 
+Modify comment.ejs by including the input tag in a form and adding 
+another text field named comment and an input tag of type submit. 
+Also set the method attribute to post and the action attribute of the form to thankyou.ejs
+    -->
+    <!-- bring it to 3rd page-->
+    <form method ="post" action="thankyou.ejs">
+
+	<div class="div_container">
+        <label>Course Code:</label>
+        <input type="text" />
+        <br>
+
+        <label>Course Name:</label>
+        <input type="text"/>
+        <br>
+
+        <label>Student email:</label>
+        <input type="text" name="email" value="<%= email %>" /> 
+        <br>
+
+        <label>Your achievement/goal:</label>
+        <input type="text"/> 
+        <br>
+        
+        <label>Your favourite language:</label>
+        <input type="text"/> 
+        <br>
+
+        <label>Your comments:</label>
+        <input type="text" name="comment" />
+        <br>
+
+        <input type="submit" value="Submit" name="submit">
+    </div>
+</form>
+</body>
+</html>
